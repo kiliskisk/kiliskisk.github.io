@@ -1,0 +1,154 @@
+* {
+  box-sizing: border-box;
+  line-height: 1.5;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.sidenav {
+  text-align: center;
+  padding: 20px 10px;
+  height: 100%;
+  width: 250px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #D6DBDF  ;
+  overflow-x: hidden;
+}
+
+.img_perfil{
+    height: 210px;
+    width: 210px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
+
+.sidenav a {
+  color: white;
+  padding: 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.content {
+  margin-left: 250px;
+  padding: 20px 10px;
+}
+
+ .content span{
+  font-weight: bold;
+ }
+
+@media only screen and (max-width: 600px){
+  .sidenav {
+      text-align: center;
+      padding: 10px 5px;
+      width: 180px;
+      font-size: small;
+      position: fixed;
+      z-index: 1;
+      top: 0;
+      left: 0;
+      background-color: #D6DBDF  ;
+      overflow-x: hidden;
+}
+
+.img_perfil{
+    height: 100px;
+    width: 100px;
+    background-repeat: no-repeat;
+    background-position: 50%;
+    border-radius: 50%;
+    background-size: 100% auto;
+}
+
+.content {
+    margin-left: 180px;
+    padding: 10px 5px;
+    font-size: small;
+}
+  
+* {
+    box-sizing: border-box;
+    line-height: 1.3;
+  }   
+} 
+
+
+.aviso{
+  display: none;
+  background: #EAEDED  ;
+  max-width: 350px;
+  border-radius: 10px;
+  border: 1px solid orange;
+  position: fixed;
+  bottom: 50%;
+  left: 40%;
+  z-index: 100;
+  padding-top: 20px;
+  box-shadow: 0px 2px 20px 10px rgba(222, 222, 222, .25);
+  text-align: center;
+}
+
+.aviso.activo{
+  display: block;
+}
+
+.aviso .aviso_cookies, .parrafo{
+margin-bottom: 15px;
+
+}
+
+.aviso #btn-aceptar,#btn-rechazar{
+  width: 80%;
+  background: #595959;
+  border: none;
+  color: white;
+  text-align: center;
+  padding: 15px 20px;
+  cursor: pointer;
+  transition: .3s ease all;
+  border-radius: 15px;
+  font-size: 14px;
+  margin-bottom: 5px;
+}
+
+
+.fondo_aviso{
+  display: none;
+  background: rgba(0, 0, 0, .50);
+  position: fixed;
+  z-index: 99;
+  width: 100vw;
+  height: 100vh;
+  top: 0;
+  left: 0;
+}
+
+.fondo_aviso.activo{
+  display: block;
+}
+
+.aviso #btn-aceptar:hover{
+  background: black;
+}
+
+.aviso #btn-rechazar:hover{
+  background: black;
+}
+
+#politica{
+  padding: 20px 100px;
+  text-align: justify;
+}
+
+#politica h1,h5{
+  text-align: center;
+}
